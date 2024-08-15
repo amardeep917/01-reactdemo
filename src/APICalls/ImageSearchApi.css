@@ -1,0 +1,36 @@
+body {background-color: coral;}
+h1{
+    color: gold;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+input{
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    
+}
+button{
+    padding: 8px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+.img-container{
+    display: flex;
+    border: 2px solid;
+    
+}
+.img-container img{
+    display: flex;
+    width: 350px;
+    height: 250px;
+}

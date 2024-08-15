@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+ import APICallAxios from "./APICalls/APICallAxios";
+import ApiCallWithBtn from "./APICalls/ApiCallWithBtn";
+
+
+import SimpleAPICalls from "./APICalls/SimpleAPICalls";
+import ContactManager from "./ContactManager/ContactManager";
+
+
+
+
+import TodoComponent from "./TodoApp/TodoComponent";
+import data from "./TodoApp/datafile";
+// import CountDown from "./components/CountDown";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        {/* <TodoComponent data={data}/> */}
+        {/* <CountDown /> */}
+        {/* <SimpleAPICalls /> */}
+        {/* <APICallAxios /> */}
+        {/* <ApiCallWithBtn /> */}
+        <ContactManager />
+        
+    </>
   );
 }
 
