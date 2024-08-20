@@ -21,6 +21,10 @@ import SortRank from "./ScoreBoard/SortRank";
 import SortName from "./ScoreBoard/SortName";
 import SortPoints from "./ScoreBoard/SortPoints";
 import NavBarComponent from "./ScoreBoard/NavBarComponent";
+import UserPage from "./NestedRoutes/UserPage";
+import LoginPage from "./NestedRoutes/LoginPage";
+import DashBoardComponent from "./NestedRoutes/DashBoardComponent";
+import PageNotFound from "./NestedRoutes/PageNotFound";
 
 
 function App() {
@@ -35,7 +39,7 @@ function App() {
         {/* <ContactManager /> */}
         {/* <FormElements /> */}
         {/* <RegistrationForm /> */}
-        <BrowserRouter>
+        {/* <BrowserRouter>
             
             <Routes>
               <Route path='/' element={<LeaderBoard></LeaderBoard>}></Route>
@@ -44,6 +48,18 @@ function App() {
               <Route path="/name" element={<SortName></SortName>}></Route>
               <Route path="/points" element={<SortPoints></SortPoints>}></Route>
             </Routes>
+        </BrowserRouter> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/user" element={<UserPage></UserPage>}>
+              <Route path="login" element={<LoginPage></LoginPage>}></Route>
+              <Route path="dashboard" element={<DashBoardComponent userdata={{
+                username:"John",
+                role:"admin"
+              }}></DashBoardComponent>}></Route>
+              <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
+            </Route>
+          </Routes>
         </BrowserRouter>
         
     </>
