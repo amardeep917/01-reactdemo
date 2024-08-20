@@ -1,0 +1,38 @@
+*{
+    /* background-color: cadetblue; */
+    background-color: #E9967A;
+    
+}
+th,td{
+    padding: 30px;
+    background-color: #96D4D4;
+}
+th{
+    background-color: #282A35;
+    color: #f1f1f1;
+    
+}
+table{
+    margin-left: 30%;
+    
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+
+button{
+    background-color: #04AA6D;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
